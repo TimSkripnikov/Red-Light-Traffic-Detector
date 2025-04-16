@@ -2,13 +2,9 @@
 
 This project is an intelligent traffic violation detection system that automatically identifies whether a vehicle has run a red light using video footage.
 
----
-
 ### Dataset
 
 The YOLO deep learning model was trained on a dataset generated from the GTA-5 game. The video used to demonstrate the traffic violation ("running a red light") was also captured from the game.
-
----
 
 The system uses computer vision to:
 - Detect the current traffic light signal
@@ -16,8 +12,6 @@ The system uses computer vision to:
 
 And deep learning:
 - Detect cars in the video frame using a custom-trained YOLOv8 model
-
----
 
 ## Demo Preview
 
