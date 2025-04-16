@@ -4,7 +4,7 @@ This project is an intelligent traffic violation detection system that automatic
 
 ---
 
-### 📊 Dataset
+### Dataset
 
 The YOLO deep learning model was trained on a dataset generated from the GTA-5 game. The video used to demonstrate the traffic violation ("running a red light") was also captured from the game.
 
@@ -19,7 +19,7 @@ And deep learning:
 
 ---
 
-## 🚀 Demo Preview
+## Demo Preview
 
 ![Traffic Violation Demo](data/output/video_result.gif)
 
@@ -31,13 +31,16 @@ And deep learning:
 - PyTorch
 - Ultralytics YOLOv8
 
-## 📦 Installation
+---
+
+## Installation
 
 ```bash
 git clone https://github.com/TimSkripnikov/Red-Light-Traffic-Detector
 cd Red-Light-Traffic-Detector
 pip install -r requirements.txt
 ```
+---
 
 ```bash
 python3 main.py
@@ -49,19 +52,27 @@ This command will:
 - Print "Violation" on the screen if a car crosses the stop line during a red light
 - You can press q to quit the video processing window
 
-## Project Structure 
+--- 
 
-├── detector/                   # Core detection logic
-│   ├── detect_cars.py          # Car detection using YOLOv8
-│   ├── detect_lights.py        # Traffic light color detection
-│   └── violation_checker.py    # Violation detection logic
+## Project Structure 
+```text
+.
+├── detector/                  # Core detection logic
+│   ├── detect_cars.py         # Car detection using YOLOv8
+│   ├── detect_lights.py       # Traffic light color detection
+│   └── violation_checker.py   # Violation detection logic
+│
 ├── data/
-│   ├── videos/                 # Input video files
-│   └── masks/                  # Binary masks for traffic light and stop line
+│   ├── videos/                # Input video files
+│   └── masks/                 # Binary masks for traffic light and stop line
+│
 ├── utils/
-│   └── save_frame.py           # Scrypt for saving one frame for making binary mask (in GIMP)   
+│   └── save_frame.py          # Script for saving one frame to create binary mask (e.g. in GIMP)
+│
 ├── model/
-│   └── yolov8n_car.pt          # YOLOv8 weights trained on cars
-├── main.py                     # Entry point for the application
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project documentation
+│   └── yolov8n_car.pt         # YOLOv8 weights trained to detect cars
+│
+├── main.py                    # Entry point for the application
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project documentation
+```
