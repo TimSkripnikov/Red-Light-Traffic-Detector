@@ -26,3 +26,7 @@ while cap.isOpened():
 
 cap.release()
 cv2.destroyAllWindows()
+
+
+#цикличный массив для хранения - numpy 
+#Интеграция светофоров и разметки
